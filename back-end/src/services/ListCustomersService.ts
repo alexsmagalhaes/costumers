@@ -1,8 +1,8 @@
 import prismaClient from "../prisma"
 
-class ListCustomersService{
+class ListCustomersService {
 
-   async excute(){
+   async excute() {
 
       const customers = await prismaClient.customer.findMany()
 
@@ -11,4 +11,4 @@ class ListCustomersService{
 
 }
 
-export {ListCustomersService}
+export { ListCustomersService }
